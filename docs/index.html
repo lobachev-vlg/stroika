@@ -9,7 +9,7 @@
 <body>
   <header>
     <div class="container nav">
-      <div class="logo">"Назв<span>ание"</span></div>
+      <div class="logo">AirSplit<span>Service 34</span></div>
       <nav class="menu">
         <a href="#services">Услуги</a>
         <a href="#prices">Цены</a>
@@ -141,18 +141,50 @@
 
     <section id="contact">
       <div class="container contact">
+        <div class="notice-box">
+          Установку и монтаж не производим
+        </div>
+
         <div class="contact-box contact-info">
           <h2 class="section-title">Контакты</h2>
-          <p><strong>Телефон:</strong> +7 (999) 123-45-67</p>
-          <p><strong>WhatsApp:</strong> +7 (999) 123-45-67</p>
-          <p><strong>Работаем:</strong> ежедневно с 9:00 до 21:00</p>
+
+          <div class="copy-wrap">
+            <p><strong>Телефон:</strong> <a href="tel:+79033159465">+7 (903) 315-94-65</a></p>
+            <button class="copy-btn" data-copy="+79033159465">Копировать</button>
+          </div>
+
+          <div class="copy-wrap">
+            <p><strong>Телефон2:</strong> <a href="tel:+79044306621">+7 (904) 430-66-21</a></p>
+            <button class="copy-btn" data-copy="+79044306621">Копировать</button>
+          </div>
+
+          <p><strong>Работаем:</strong> ежедневно с 9:00 до 23:00</p>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    © 2026 "Название" — обслуживание, мойка, ремонт и заправка кондиционеров
+    © 2026 AirSplitService34 — обслуживание, мойка, ремонт и заправка кондиционеров
   </footer>
+
+  <script>
+    document.querySelectorAll('[data-copy]').forEach((btn) => {
+      btn.addEventListener('click', async () => {
+        const text = btn.dataset.copy;
+
+        try {
+          await navigator.clipboard.writeText(text);
+          const oldText = btn.textContent;
+          btn.textContent = 'Скопировано';
+          setTimeout(() => {
+            btn.textContent = oldText;
+          }, 1200);
+        } catch (err) {
+          alert('Не удалось скопировать');
+        }
+      });
+    });
+  </script>
 </body>
 </html>

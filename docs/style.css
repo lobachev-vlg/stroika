@@ -270,6 +270,18 @@ section {
   gap: 20px;
 }
 
+.notice-box {
+  background: linear-gradient(180deg, #fff4e8 0%, #ffe9cf 100%);
+  border: 1px solid #ffcc8a;
+  color: #8a4b00;
+  border-radius: 18px;
+  padding: 18px 22px;
+  font-size: 18px;
+  font-weight: 800;
+  text-align: center;
+  box-shadow: 0 12px 24px rgba(255, 153, 0, 0.12);
+}
+
 .contact-box {
   background: linear-gradient(180deg, #ffffff 0%, #eef8ff 100%);
   border: 1px solid var(--border);
@@ -282,6 +294,47 @@ section {
   margin: 0 0 12px;
   color: var(--muted);
   line-height: 1.7;
+}
+
+.copy-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 0 0 12px;
+}
+
+.copy-wrap p {
+  margin: 0;
+}
+
+.copy-wrap a {
+  color: var(--primary-dark);
+  font-weight: 700;
+}
+
+.copy-btn {
+  appearance: none;
+  border: 1px solid rgba(31, 134, 255, 0.18);
+  background: linear-gradient(180deg, #2b93ff 0%, #1978e8 100%);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 10px 18px rgba(31, 134, 255, 0.22);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.copy-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 22px rgba(31, 134, 255, 0.28);
+  background: linear-gradient(180deg, #339bff 0%, #156dd4 100%);
+}
+
+.copy-btn:active {
+  transform: translateY(0);
 }
 
 footer {
