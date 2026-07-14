@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 fetch("/api/visit").catch(console.error);
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -71,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
   createDots();
   updateCarousel();
 });
-=======
+
 fetch("/api/visit").catch(console.error);
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -144,4 +143,3 @@ document.addEventListener("DOMContentLoaded", () => {
   createDots();
   updateCarousel();
 });
->>>>>>> f45a937 (Initial commit)
